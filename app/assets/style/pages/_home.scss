@@ -5,6 +5,11 @@
   &-content {
     border: 1px solid $white;
     margin: 0 auto;
+    &-dot {
+      width: 10px;
+      height: 10px;
+      background: #ccc;
+    }
     > h1 {
       background: linear-gradient(to top, $primary, $secondary);
       background: -webkit-linear-gradient(to top, $primary, $secondary);
@@ -103,56 +108,28 @@
   color: $primary;
 }
 
-.pseudo {
-  &-top {
-    position: relative;
-    &::after {
-      content: "";
-      border-top: 1px solid $primary;
-      border-left: 1px solid $primary;
-      border-radius: 4px;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      top: 0;
-      left: 0;
+.article {
+  &-border {
+    display: none;
+    width: 32px;
+    height: 32px;
+    &-topLeft {
+      border-top-left-radius: 10px;
     }
-    &::before {
-      content: "";
-      border-top: 1px solid $primary;
-      border-right: 1px solid $primary;
-      border-radius: 4px;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      top: 0;
-      right: 0;
+    &-topRight {
+      border-top-right-radius: 10px;
+    }
+    &-bottomLeft {
+      border-bottom-left-radius: 10px;
+    }
+    &-bottomRight {
+      border-bottom-right-radius: 10px;
     }
   }
-  &-bottom {
-    position: relative;
-    &::after {
-      content: "";
-      border-bottom: 1px solid $primary;
-      border-left: 1px solid $primary;
-      border-radius: 4px;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-    &::before {
-      content: "";
-      border-bottom: 1px solid $primary;
-      border-right: 1px solid $primary;
-      border-radius: 4px;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
+}
+.article:hover {
+  .article-border {
+    display: block;
   }
 }
 

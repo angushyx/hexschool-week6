@@ -7,16 +7,20 @@ current: index
 <main>
 
   <!-- hero -->
-  <section class="hero d-flex flex-column justify-content-center text-center px-6">
-    <div class="hero-content py-md-7 px-md-10 py-4 px-3 bg-gary-2d">
+  <section data-aos="fade-up" class="hero d-flex flex-column justify-content-center text-center px-6">
+    <div class="hero-content position-relative py-md-7 px-md-10 py-4 px-3 bg-gary-2d ">
+      <div class="position-absolute hero-content-dotd start-0 translate-middle "></div>
+      <div class="position-absolute hero-content-dotd  start-100 translate-middle "></div>
       <h1 class="fs-xl fw-bold">全台最豐富的程式家教</h1>
       <h2 class="fs-xl mb-4 fw-bold">在實踐中化理想為現實</h2>
       <h3 class="fs-5">全台最專業師資｜到府程式家教｜客製化課程</h3>
+      <div class="position-absolute hero-content-dot top-100 start-0 translate-middle"></div>
+      <div class="position-absolute hero-content-dot top-100 start-100 translate-middle"></div>
     </div>
   </section>
 
   <!-- intro -->
-  <section class="intro bg-light-58">
+  <section data-aos="fade-left" class="intro bg-light-58">
     <div class="container py-7 py-md-10">
       <div class="row ">
         <div class="col-12 fs-3 py-3 text-center text-md-start col-md-3 px-md-4 py-md-7 ">
@@ -42,7 +46,7 @@ current: index
   </section>
 
   <!-- step  -->
-  <section>
+  <section data-aos="slide-up">
     <div class="container py-7 py-md-10">
       <h2 class="subTitle text-center fs-3 mb-8 mb-md-10">
         預期上課流程
@@ -80,7 +84,7 @@ current: index
     </div>
   </section>
 
-  <section class="bg-light-58">
+  <section data-aos="fade-right" class="bg-light-58">
     <div class="py-7 py-md-10">
       <h2 class="subTitle text-center fs-3 mb-8 mb-md-10">
         你想要學習的程式，都在這裡
@@ -201,7 +205,7 @@ current: index
   </section>
   <!-- info  -->
   <!-- TODO IMAGE 的 SIZE待調整 -->
-  <section class="info">
+  <section data-aos="fade-up" class="info">
     <div>
       <div class="row g-0">
         <div class="col-12 col-md-3 position-relative">
@@ -243,52 +247,95 @@ current: index
   </section>
 
 
-  <!-- Shared -->
+  <!-- article -->
   <!-- TODO 第 259 行 pesudo element 該如何解決?-->
-  <section class="shared">
+  <section data-aos="slide-right" class="article ">
 
     <h2 class="subTitle text-center fs-3 mb-8 mb-md-10 mt-10">
       文章分享
     </h2>
 
-    <div class="container px-4 article">
+    <div class="container article mb-md-12">
       <div class="row gx-5">
-        <div class="col-12 col-lg-4 mb-5 article-wrapper">
-          <div class="pseudo-top py-5 px-10"></div>
-          <img class="w-100 mb-3 article-image" src="./assets/images/article01.jpg" alt="圖片：2022 前端開發者學習地圖">
-          <div class="d-flex flex-column">
-            <h3>2022 前端開發者學習地圖</h3>
-            <p>轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
-            <a href="#" class="link-primary text-end">MORE</a>
+        <div class="col-12 col-lg-4">
+          <div class="position-relative p-5 article">
+            <div
+              class="article-border article-border-topLeft border-2 border-top border-start border-primary position-absolute top-0 start-0 translate-middle">
+            </div>
+            <div
+              class="article-border article-border-topRight border-2 border-top border-end border-primary position-absolute top-0 start-100 translate-middle">
+            </div>
+
+            <img class="w-100 mb-3 article-image" src="./assets/images/article01.jpg" alt="圖片：2022 前端開發者學習地圖">
+            <div class="d-flex flex-column">
+              <h3>2022 前端開發者學習地圖</h3>
+              <p>轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
+              <a href="#" class="link-primary text-end">MORE</a>
+            </div>
+            <div
+              class="article-border article-border-bottomLeft border-2 border-bottom border-start border-primary position-absolute top-100 start-0 translate-middle ">
+            </div>
+            <div
+              class="article-border article-border-bottomRight border-2 border-bottom border-end border-primary position-absolute top-100 start-100 translate-middle">
+            </div>
           </div>
-          <div class="pseudo-bottom"></div>
         </div>
 
+        <div class="col-12 col-lg-4">
+          <div class="position-relative p-5 article">
+            <div
+              class="article-border article-border-topLeft border-2 border-top border-start border-primary position-absolute top-0 start-0 translate-middle">
+            </div>
+            <div
+              class="article-border article-border-topRight border-2 border-top border-end border-primary position-absolute top-0 start-100 translate-middle">
+            </div>
 
-        <div class="col-12 col-lg-4 px-5 py-5 mb-5">
-          <img class="w-100 mb-3" src="./assets/images/article02.jpg" alt="圖片:軟體工程師有哪些類別">
-          <div class="d-flex flex-column">
-            <h3>軟體工程師有哪些類別</h3>
-            <p>軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
-            <a href="#" class="link-primary text-end">MORE</a>
+            <img class="w-100 mb-3 article-image" src="./assets/images/article02.jpg" alt="圖片:軟體工程師有哪些類別">
+            <div class="d-flex flex-column">
+              <h3>軟體工程師有哪些類別</h3>
+              <p>軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務</p>
+              <a href="#" class="link-primary text-end">MORE</a>
+            </div>
+            <div
+              class="article-border article-border-bottomLeft border-2 border-bottom border-start border-primary position-absolute top-100 start-0 translate-middle ">
+            </div>
+            <div
+              class="article-border article-border-bottomRight border-2 border-bottom border-end border-primary position-absolute top-100 start-100 translate-middle">
+            </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4 px-5 py-5 mb-5">
-          <img class="w-100 mb-3" src="./assets/images/article03.jpg" alt="圖片：免費 25 小時前端教學資源">
-          <div class="d-flex flex-column">
-            <h3>免費 25 小時前端教學資源</h3>
-            <p>這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
-            <a href="#" class="link-primary text-end">MORE</a>
+        <div class="col-12 col-lg-4">
+          <div class="position-relative p-5 article">
+            <div
+              class="article-border article-border-topLeft border-2 border-top border-start border-primary position-absolute top-0 start-0 translate-middle">
+            </div>
+            <div
+              class="article-border article-border-topRight border-2 border-top border-end border-primary position-absolute top-0 start-100 translate-middle">
+            </div>
+
+            <img class="w-100 mb-3 article-image" src="./assets/images/article03.jpg" alt="圖片：免費 25 小時前端教學資源">
+            <div class="d-flex flex-column">
+              <h3>免費 25 小時前端教學資源</h3>
+              <p>這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
+              <a href="#" class="link-primary text-end">MORE</a>
+            </div>
+            <div
+              class="article-border article-border-bottomLeft border-2 border-bottom border-start border-primary position-absolute top-100 start-0 translate-middle ">
+            </div>
+            <div
+              class="article-border article-border-bottomRight border-2 border-bottom border-end border-primary position-absolute top-100 start-100 translate-middle">
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
 
 
 
 
-  <section class="comment">
+  <section data-aos="fade-up" class="comment">
 
     <h2 class="subTitle text-center fs-3 mb-8 mb-md-10 pt-10">
       專屬你的學習課程<br>超過 3000 位學員得到了程式超能力
